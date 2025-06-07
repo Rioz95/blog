@@ -1,25 +1,7 @@
 <?php
 get_header(); ?>
 
-<!-- ##################### -->
-<!-- Navigation -->
-<!-- ##################### -->
-
-<nav class="navigation-principale">
-    <a href="./single.html" class="logo"><img src="./images/logo.svg" alt=""></a>
-    <ul class="menu">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">À propos</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-    </ul>
-    <div class="icones-navigation">
-        <div id="btn-search"><ion-icon name="search-outline"></ion-icon></div>
-        <div id="btn-burger"><ion-icon name="menu-outline"></ion-icon></div>
-    </div>
-    <form action="#" class="search">
-        <input type="search" placeholder="Que recherchez vous ?">
-    </form>
-</nav>
+<?php include('inc/nav.php'); ?>
 
 <!-- ##################### -->
 <!-- Home -->

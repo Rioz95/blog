@@ -9,14 +9,14 @@ get_header(); ?>
 
 <section id="home">
     <div class="home-content">
-        <h1>De la Ligne de Code à <span>l'Œuvre d'Art</span></h1>
+        <h1><?php echo the_field('home_title'); ?></h1>
         <div class="home-line"></div>
-        <p>Explorer le Monde du <b>Web et du Design</b></p>
+        <p><?php echo the_field('home_subtitle'); ?></p>
     </div>
 </section>
 
 <div class="heading">
-    <h2>Nos <span>Articles</span></h2>
+    <h2><?php echo the_field('home_title_section'); ?></h2>
 </div>
 <!-- ##################### -->
 <!-- Filtre -->

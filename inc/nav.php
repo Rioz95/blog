@@ -12,7 +12,7 @@
         <div id="btn-search"><ion-icon name="search-outline"></ion-icon></div>
         <div id="btn-burger"><ion-icon name="menu-outline"></ion-icon></div>
     </div>
-    <form action="#" class="search">
-        <input type="search" placeholder="Que recherchez vous ?">
+    <form action="<?php echo home_url('/'); ?>" autocomplete="on" class="search">
+        <input id="s" name="s" type="search" placeholder="Que recherchez vous ?">
     </form>
 </nav>

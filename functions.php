@@ -21,7 +21,18 @@ function enqueue_custom_scripts()
     wp_enqueue_script('app-script');
 }
 
+
 add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
+
+function change_search_url_rewrite()
+{
+    if (is_search() && !empty($_GET['s'])) {
+        wp_redirect(home_url("/search/") . urlencode(get_query_var('s')));
+        exit();
+    }
+}
+
 
 //  cacher la barre d'admin
 add_filter('show_admin_bar', '__return_false');
